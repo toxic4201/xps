@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>XServer</ProjectName>
+    <ProjectGuid>{7D886AB4-11C4-4316-B057-5C2F86199F79}</ProjectGuid>
+    <RootNamespace>XServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\lc.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../include;../include/G3D;../../shared/Shared/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Shared.h</PrecompiledHeaderFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;libmysql.lib;G3Dd.lib;zip.lib;zlib.lib;dbghelp.lib;version.lib;Shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib/debug;../lib;../../shared/Debug;../../shared/shared/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib; LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <HeapReserveSize>0</HeapReserveSize>
+      <HeapCommitSize>0</HeapCommitSize>
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../include;../include/G3D;../../shared/Shared/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Shared.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;libmysql.lib;G3D.lib;zip.lib;zlib.lib;dbghelp.lib;Shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib/release;../lib;../../shared/Release;../../shared/shared/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\XServer\AABSPTree.h" />
+    <ClInclude Include="..\XServer\AccountManager.h" />
+    <ClInclude Include="..\XServer\CallBacks.h" />
+    <ClInclude Include="..\XServer\Config.h" />
+    <ClInclude Include="..\XServer\Creature.h" />
+    <ClInclude Include="..\XServer\CStackWalker.h" />
+    <ClInclude Include="..\XServer\Defines.h" />
+    <ClInclude Include="..\XServer\EventHandler.h" />
+    <ClInclude Include="..\XServer\EventMgr.h" />
+    <ClInclude Include="..\XServer\FileCrypt.h" />
+    <ClInclude Include="..\XServer\GameClientSocket.h" />
+    <ClInclude Include="..\XServer\InstanceMgr.h" />
+    <ClInclude Include="..\XServer\Item.h" />
+    <ClInclude Include="..\XServer\Launcher.h" />
+    <ClInclude Include="..\XServer\LockedDeque.h" />
+    <ClInclude Include="..\XServer\Logger.h" />
+    <ClInclude Include="..\XServer\Logs.h" />
+    <ClInclude Include="..\XServer\MapCell.h" />
+    <ClInclude Include="..\XServer\MapMgr.h" />
+    <ClInclude Include="..\XServer\MemoryBlock.h" />
+    <ClInclude Include="..\XServer\MersenneTwister.h" />
+    <ClInclude Include="..\XServer\MersenneTwister\randomc.h" />
+    <ClInclude Include="..\XServer\micropather\micropather.h" />
+    <ClInclude Include="..\XServer\MySQL.h" />
+    <ClInclude Include="..\XServer\Object.h" />
+    <ClInclude Include="..\XServer\PacketHandler.h" />
+    <ClInclude Include="..\XServer\Player.h" />
+    <ClInclude Include="..\XServer\Scripts.h" />
+    <ClInclude Include="..\XServer\scripts\ArachnidQueen.h" />
+    <ClInclude Include="..\XServer\scripts\BeamCrystal.h" />
+    <ClInclude Include="..\XServer\scripts\ChargedLurker.h" />
+    <ClInclude Include="..\XServer\scripts\ConsAttack.h" />
+    <ClInclude Include="..\XServer\scripts\DestructableWall.h" />
+    <ClInclude Include="..\XServer\scripts\Ganar.h" />
+    <ClInclude Include="..\XServer\scripts\Ingor.h" />
+    <ClInclude Include="..\XServer\scripts\Jeloc.h" />
+    <ClInclude Include="..\XServer\scripts\JelocVelBoss.h" />
+    <ClInclude Include="..\XServer\scripts\Loki.h" />
+    <ClInclude Include="..\XServer\scripts\Magroth.h" />
+    <ClInclude Include="..\XServer\scripts\Osmos.h" />
+    <ClInclude Include="..\XServer\scripts\Raelek.h" />
+    <ClInclude Include="..\XServer\scripts\ReflectionBoss.h" />
+    <ClInclude Include="..\XServer\scripts\ScriptInclude.h" />
+    <ClInclude Include="..\XServer\scripts\Valetar.h" />
+    <ClInclude Include="..\XServer\scripts\YanBlack.h" />
+    <ClInclude Include="..\XServer\ServerPacket.h" />
+    <ClInclude Include="..\XServer\Session.h" />
+    <ClInclude Include="..\XServer\Shared.h" />
+    <ClInclude Include="..\XServer\Skills.h" />
+    <ClInclude Include="..\XServer\SocketWorker.h" />
+    <ClInclude Include="..\XServer\Spell.h" />
+    <ClInclude Include="..\XServer\SpellAura.h" />
+    <ClInclude Include="..\XServer\SQLStorage.h" />
+    <ClInclude Include="..\XServer\StackBuffer.h" />
+    <ClInclude Include="..\XServer\StackWalker.h" />
+    <ClInclude Include="..\XServer\Test.h" />
+    <ClInclude Include="..\XServer\ThreadFuncs.h" />
+    <ClInclude Include="..\XServer\TimedObject.h" />
+    <ClInclude Include="..\XServer\Unit.h" />
+    <ClInclude Include="..\XServer\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\XServer\AccountManager.cpp" />
+    <ClCompile Include="..\XServer\Config.cpp" />
+    <ClCompile Include="..\XServer\Creature.cpp" />
+    <ClCompile Include="..\XServer\CStackWalker.cpp" />
+    <ClCompile Include="..\XServer\EventHandler.cpp" />
+    <ClCompile Include="..\XServer\EventMgr.cpp" />
+    <ClCompile Include="..\XServer\FileCrypt.cpp" />
+    <ClCompile Include="..\XServer\GameClientSocket.cpp" />
+    <ClCompile Include="..\XServer\InstanceMgr.cpp" />
+    <ClCompile Include="..\XServer\Item.cpp" />
+    <ClCompile Include="..\XServer\Launcher.cpp" />
+    <ClCompile Include="..\XServer\Logger.cpp" />
+    <ClCompile Include="..\XServer\Main.cpp" />
+    <ClCompile Include="..\XServer\MapCell.cpp" />
+    <ClCompile Include="..\XServer\MapMgr.cpp" />
+    <ClCompile Include="..\XServer\MemoryBlock.cpp" />
+    <ClCompile Include="..\XServer\MersenneTwister.cpp" />
+    <ClCompile Include="..\XServer\MersenneTwister\mersenne.cpp" />
+    <ClCompile Include="..\XServer\MersenneTwister\mother.cpp" />
+    <ClCompile Include="..\XServer\MersenneTwister\rancombi.cpp" />
+    <ClCompile Include="..\XServer\MersenneTwister\userintf.cpp" />
+    <ClCompile Include="..\XServer\micropather\micropather.cpp" />
+    <ClCompile Include="..\XServer\MySQL.cpp" />
+    <ClCompile Include="..\XServer\Object.cpp" />
+    <ClCompile Include="..\XServer\PacketHandler.cpp" />
+    <ClCompile Include="..\XServer\Player.cpp" />
+    <ClCompile Include="..\XServer\Scripts.cpp" />
+    <ClCompile Include="..\XServer\scripts\ArachnidQueen.cpp" />
+    <ClCompile Include="..\XServer\scripts\BeamCrystal.cpp" />
+    <ClCompile Include="..\XServer\scripts\ChargedLurker.cpp" />
+    <ClCompile Include="..\XServer\scripts\ConsAttack.cpp" />
+    <ClCompile Include="..\XServer\scripts\DestructableWall.cpp" />
+    <ClCompile Include="..\XServer\scripts\Ganar.cpp" />
+    <ClCompile Include="..\XServer\scripts\Ingor.cpp" />
+    <ClCompile Include="..\XServer\scripts\Jeloc.cpp" />
+    <ClCompile Include="..\XServer\scripts\JelocVelBoss.cpp" />
+    <ClCompile Include="..\XServer\scripts\Loki.cpp" />
+    <ClCompile Include="..\XServer\scripts\Magroth.cpp" />
+    <ClCompile Include="..\XServer\scripts\Osmos.cpp" />
+    <ClCompile Include="..\XServer\scripts\Raelek.cpp" />
+    <ClCompile Include="..\XServer\scripts\ReflectionBoss.cpp" />
+    <ClCompile Include="..\XServer\scripts\Valetar.cpp" />
+    <ClCompile Include="..\XServer\scripts\YanBlack.cpp" />
+    <ClCompile Include="..\XServer\ServerPacket.cpp" />
+    <ClCompile Include="..\XServer\Session.cpp" />
+    <ClCompile Include="..\XServer\Shared.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Skills.cpp" />
+    <ClCompile Include="..\XServer\SocketWorker.cpp" />
+    <ClCompile Include="..\XServer\Spell.cpp" />
+    <ClCompile Include="..\XServer\SpellAura.cpp" />
+    <ClCompile Include="..\XServer\SQLStorage.cpp" />
+    <ClCompile Include="..\XServer\StackBuffer.cpp" />
+    <ClCompile Include="..\XServer\StackWalker.cpp" />
+    <ClCompile Include="..\XServer\Test.cpp" />
+    <ClCompile Include="..\XServer\ThreadFuncs.cpp" />
+    <ClCompile Include="..\XServer\TimedObject.cpp" />
+    <ClCompile Include="..\XServer\Unit.cpp" />
+    <ClCompile Include="..\XServer\World.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\lc.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>

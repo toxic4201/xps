@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\scripts">
+      <UniqueIdentifier>{791a4cf8-a129-4ab2-9099-58f2969e42e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\XServer\AABSPTree.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\AccountManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\CallBacks.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Creature.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\CStackWalker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Defines.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\EventHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\EventMgr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\FileCrypt.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\GameClientSocket.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\InstanceMgr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Item.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Launcher.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\LockedDeque.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Logger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Logs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MapCell.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MapMgr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MemoryBlock.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MersenneTwister.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\micropather\micropather.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MySQL.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Object.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\PacketHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Player.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\MersenneTwister\randomc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Scripts.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\ServerPacket.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Session.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Shared.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Skills.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\SocketWorker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Spell.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\SpellAura.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\SQLStorage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\StackBuffer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\StackWalker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Test.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\ThreadFuncs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\TimedObject.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\Unit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\World.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\ArachnidQueen.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\BeamCrystal.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\ChargedLurker.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\ConsAttack.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\DestructableWall.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Ganar.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Ingor.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Jeloc.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\JelocVelBoss.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Loki.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Magroth.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Osmos.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Raelek.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\ReflectionBoss.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\ScriptInclude.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\Valetar.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XServer\scripts\YanBlack.h">
+      <Filter>Source Files\scripts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\XServer\AccountManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Creature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\CStackWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\EventHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\EventMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\FileCrypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\GameClientSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\InstanceMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Launcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MapCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MapMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MemoryBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MersenneTwister\mersenne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MersenneTwister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\micropather\micropather.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MersenneTwister\mother.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MySQL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\PacketHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MersenneTwister\rancombi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\ServerPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Skills.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\SocketWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Spell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\SpellAura.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\SQLStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\StackBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\StackWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\ThreadFuncs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\TimedObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\Unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\MersenneTwister\userintf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\ArachnidQueen.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\BeamCrystal.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\ChargedLurker.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\ConsAttack.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\DestructableWall.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Ganar.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Ingor.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Jeloc.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\JelocVelBoss.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Loki.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Magroth.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Osmos.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Raelek.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\ReflectionBoss.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\Valetar.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XServer\scripts\YanBlack.cpp">
+      <Filter>Source Files\scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
